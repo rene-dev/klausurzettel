@@ -1,5 +1,3 @@
-%% LyX 2.0.0 created this file.  For more info, see http://www.lyx.org/.
-%% Do not edit unless you really know what you are doing.
 \documentclass[ngerman]{article}
 
 \usepackage[T1]{fontenc}
@@ -35,9 +33,13 @@ $a^{r-s}=\frac{a^{r}}{a^{s}}$
 
 $(a\cdot b)^{r}=a^{r}\cdot b^{r}$
 
-$\left(\frac{a}{b}\right)^{r}=\frac{a^{r}}{b^{r}}$; $\left(a^{r}\right)^{s}=a^{r\cdot s}$
+$\left(\frac{a}{b}\right)^{r}=\frac{a^{r}}{b^{r}}$
 
-\textbf{Komplexe Zahlen.} $(a+b\mathrm i)+(c+d\mathrm i)=(a+c)+(b+d)\mathrm i$ ; $(a + b \mathrm i) - (c + d \mathrm i) = (a - c) + (b - d) \mathrm i$
+$\left(a^{r}\right)^{s}=a^{r\cdot s}$
+
+\textbf{Komplexe Zahlen.} $(a+b\mathrm i)+(c+d\mathrm i)=(a+c)+(b+d)\mathrm i$
+
+$(a + b \mathrm i) - (c + d \mathrm i) = (a - c) + (b - d) \mathrm i$
 
 $(a+b\mathrm{i})\cdot(c+d\mathrm{i})=(ac-bd) + (ad+bc)\cdot\mathrm i$
 
@@ -55,7 +57,11 @@ $\frac{a+b\,\mathrm i}{c+d\,\mathrm i} = \frac{(a+b\,\mathrm i)(c-d\,\mathrm i)}
 
 $(A(0) \wedge ( \forall  n \in \mathbb N : A(n) \Rightarrow A(n+1))) \Rightarrow \left(\forall n \in \mathbb N \colon A(n)\right)$
 
-Induktionsanfang: $A(0)$ ist wahr ; Induktionsvoraussetzung: Es gelte A(n) für ein belibiges aber festes $n \in \mathbb N$ ; Induktionsschluss: $n \mapsto n+1$, Gilt $A(n+1)$, dann gilt  $\forall n \in \mathbb{N}$ $A(n)$
+Induktionsanfang: $A(0)$ ist wahr
+
+Induktionsvoraussetzung: Es gelte A(n) für ein belibiges aber festes $n \in \mathbb N$
+
+Induktionsschluss: $n \mapsto n+1$, Gilt $A(n+1)$, dann gilt  $\forall n \in \mathbb{N}$ $A(n)$
 
 \textbf{Def. 1.5.8 (Max., Min., Sup., \& Inf.).} Es sei $(M,\preceq)$ eine Halbordnung und $X$ Teilmenge von $M$. Ein Element $a\in X$ heißt \{minimales / maximales\} Element in $X$, wenn für kein $x\in X$ gilt \{ $x\prec a$ / $x \succ a$ \}.
 
@@ -119,11 +125,15 @@ $\lim_{n \rightarrow \infty} \frac{n}{n+1} = 1$
 
 (ii) Ist $\sum_{k=1}^\infty b_k$ nicht absolut konvergent und gibt es eine reelle Zahl $c > 0$ mit $\vert a_n\vert \geq c \cdot \vert b_n \vert$ für alle $n \in \mathbb N$, dann ist auch $\sum_{k=1}^\infty a_k$ nicht absolut konvergent.
 
-\textbf{Satz 4.1.28 (Quotientenkriterium).} Es sei $(a_n)_{n\in \mathbb N}$ eine Folge komplexer Zahlen.
+\textbf{Satz 4.1.28 (Quotientenkriterium).}
 
-(i) Gibt es ein $q < 1$, so dass $\frac{a_{n+1}}{a_n} \leq q$ für alle $n \geq n_0 \in \mathbb N$, dann ist die zugehörige Reihe $\sum_{k=1}^\infty a_k$ absolut konvergent.
+Es sei $(a_n)_{n\in \mathbb N}$ eine Folge komplexer Zahlen. Gibt es ein $n_0$ und ein $q<1$, so dass für alle $n>n_0$.
 
-FIXME
+$\left|\frac{a_{n+1}}{a_n}\right| \le q<1$ absolut konvergen
+
+$\left|\frac{a_{n+1}}{a_n}\right| = 1$ keine Aussage möglich
+
+$\left|\frac{a_{n+1}}{a_n}\right| \ge q > 1$ divergent
 
 \textbf{Satz 4.1.29 (Wurzelkriterium).} Es sei $(a_n)_{n \in \mathbb N}$ eine Folge komplexer Zahlen.
 
@@ -186,7 +196,7 @@ $\sum_{k=0}^\infty \frac{k!}{k^k} =$ FIXME
 
 \textbf{Berührungspunkte.}
 
-\textbf{4.2.1 (Berührungspunket).} FIXME
+\textbf{Def. 4.2.1 (Berührungspunket).} Es sei $D \subseteq \mathbb K$. Ein Element $x_0 \in \mathbb K$ heißt Berührungspunkt von D, wenn es eine Folge $(x_n)_{n \in \mathbb N}$ mit $x_n \in D$ für alle $n \in \mathbb N$ gibt, so dass $\lim_{n \rightarrow \infty} x_n = x_0$
 
 \textbf{Grenzwert.} FIXME
 
