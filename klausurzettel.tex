@@ -20,8 +20,7 @@
 
 \textbf{Leonhard Küper}
 
-\textbf{Potenzgesetze.} 
-$a^{0}=1$
+\textbf{Potenzgesetze.} $a^{0}=1$
 
 $a^{-r}=\frac{1}{a^{r}}$
 
@@ -125,19 +124,21 @@ $\lim_{n \rightarrow \infty} \frac{n}{n+1} = 1$
 
 (ii) Ist $\sum_{k=1}^\infty b_k$ nicht absolut konvergent und gibt es eine reelle Zahl $c > 0$ mit $\vert a_n\vert \geq c \cdot \vert b_n \vert$ für alle $n \in \mathbb N$, dann ist auch $\sum_{k=1}^\infty a_k$ nicht absolut konvergent.
 
-\textbf{Satz 4.1.28 (Quotientenkriterium).}
+\textbf{Satz 4.1.28 (Quotientenkriterium).} Es sei $(a_n)_{n\in \mathbb N}$ eine Folge komplexer Zahlen. Gibt es ein $n_0$, so dass für alle $n>n_0$ gilt:
 
-Es sei $(a_n)_{n\in \mathbb N}$ eine Folge komplexer Zahlen. Gibt es ein $n_0$ und ein $q<1$, so dass für alle $n>n_0$.
+$\left|\frac{a_{n+1}}{a_n}\right| \le q<1$, dann ist $\sum_{k=1}^\infty a_k$ absolut konvergen
 
-$\left|\frac{a_{n+1}}{a_n}\right| \le q<1$ absolut konvergen
+$\left|\frac{a_{n+1}}{a_n}\right| = 1$, dann ist keine Aussage möglich
 
-$\left|\frac{a_{n+1}}{a_n}\right| = 1$ keine Aussage möglich
+$\left|\frac{a_{n+1}}{a_n}\right| \ge q > 1$, dann ist $\sum_{k=1}^\infty a_k$ divergent
 
-$\left|\frac{a_{n+1}}{a_n}\right| \ge q > 1$ divergent
+\textbf{Satz 4.1.29 (Wurzelkriterium).} Es sei $(a_n)_{n\in \mathbb N}$ eine Folge komplexer Zahlen. Gibt es ein $n_0$, so dass für alle $n>n_0$ gilt:
 
-\textbf{Satz 4.1.29 (Wurzelkriterium).} Es sei $(a_n)_{n \in \mathbb N}$ eine Folge komplexer Zahlen.
+$\sqrt[n]{\vert a_n \vert} \le q<1$, dann ist $\sum_{k=1}^\infty a_k$ absolut konvergen
 
-(i) Gibt es ein FIXME
+$\sqrt[n]{\vert a_n \vert} = 1$, dann ist keine Aussage möglich
+
+$\sqrt[n]{\vert a_n \vert} \ge q > 1$, dann ist $\sum_{k=1}^\infty a_k$ divergent
 
 \textbf{Satz 4.1.31 (Leibnitz-Kriterium).} Es sei $\sum_{k=1}^\infty a_k$ eine alternierende Reihe. Ist die Folge $(\vert a_n \vert )_{n \in \mathbb N}$ eine monoton fallende Nullfolge, dann konvergiert die Reihe $\sum_{k=1}^\infty a_k$.
 
@@ -151,12 +152,13 @@ $\sum_{k=0}^\infty \frac{1}{k^2} = \frac{\pi^2}{6}$
 
 $\sum_{k=0}^\infty \frac{k!}{k^k} =$ FIXME
 
-
 \textbf{Potenzreihen.}
 
 \textbf{Def. 4.1.35 (Potenzreihen).} Es sei $(a_n)_{n \in \mathbb N_0}$ eine Folge komplexer Zahlen. Dann ist für belibige $z \in \mathbb C$ $\sum_{k=0}^\infty a_k z^k$ eine Potenzreihe.
 
-\textbf{Def. 4.1.37 (Konvergenzradius).} FIXME
+\textbf{Def. 4.1.37 (Konvergenzbereich, Konvergenzradius).} Es sei $(a_n)_{n\in \mathbb N_0}$ eine Folge komplexer Zahlen und $\sum_{k=0}^\infty a_k z^k$ die zugehörige Potenzreihe. Dann nennt man die Menge $C := \{ z \in \mathbb C \vert \sum_{k=0}^\infty a_k z^k \text{konvergiert}\}$ den Konvegenzbereich der Potenzreihe.
+
+Außerdem nennt man $\rho := \sup \{ \vert z\vert \vert z \in K\}$ den Konvergenzradius der Potenzreihe.
 
 \textbf{Satz 4.1.38 (Konvergenz von Potenzreihen).} FIXME
 
