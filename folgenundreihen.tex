@@ -1,0 +1,126 @@
+\textbf{Die reellen Zahlen.}
+
+\textbf{Def. 4.1.1 (Anordnungsaxiome).} Ein Körper $K$ heißt angeordnet, wenn es in ihm eine Teilmenge $P$ (den Positivbereich gibt, der die folgenden Eigenschaften besitzt:
+
+(i) K ist disjunkte Vereinigung der Mengen $P$, $\{ 0 \}$ und $-P := \{ x \in K \vert -x \in P \}$
+
+(ii) Für $x,y \in P$ gilt: $x + y \in P$ und $x \cdot y \in P$
+
+\textbf{Folgen.}
+
+\textbf{Def. 4.1.9 (Konv. v. Folgen).} Es sei $(a_n)_{n \in \mathbb N}$ eine Folge von komplexen Zahlen $a_n \in \mathbb C$. Die Folge konvergiert gegen den Grenzwert $a \in \mathbb C$ ($\lim_{n \rightarrow \infty} a_n = a$) wenn gilt: $\forall \epsilon > 0 \exists n_0 \in \mathbb N \forall n > n_0 : \vert a_n - a \vert < \epsilon$. 
+
+\textbf{Satz 4.1.10 (Eindeutigkeit des Grenzwerts).} Es sei $(a_n)_{n \in \mathbb N}$ eine konvergente Folge mit $a_n \in \mathbb{C}$. Dann ist der Grenzwert a der Folge eindeutig bestimmt.
+
+\textbf{Satz 4.1.14 (Vergleichskriterium).} Es seien $(a_n)$, $(b_n)$ und $(c_n)$ reelle Zahlenfolgen mit $a_n \leq b_n \leq c_n$ für alle $n \in \mathbb N$.
+
+(i) Ist $b \in \mathbb R$ mit $\lim_{n \rightarrow \infty} a_n\ = \lim_{n \rightarrow \infty} c_n = b$, so ist $\lim_{n \rightarrow \infty} b_n = b$.
+
+(ii) Ist $\lim_{n \rightarrow \infty} a_n = \infty$, so ist auch $\lim_{n \rightarrow \infty} b_n = \infty$.
+
+(iii) Ist $\lim_{n \rightarrow \infty} c_n = -\infty$, so ist auch $\lim_{n \rightarrow \infty} b_n = -\infty$.
+
+\textbf{Satz 4.1.17 (Verknüpfungen konvergenter Folgen).} Es seien $(a_n)_{n\in \mathbb N}$ und $(b_n)_{n \in \mathbb N}$ konvergente komplexe Zahlenfolgen, $a := \lim_{n \rightarrow \infty} a_n$ und $b := \lim_{n \rightarrow \infty} b_n$. Dann gilt:
+
+(i) Die Folge $(a_n \pm b_n)$ ist konvergen mit $\lim_{n \rightarrow \infty} (a_n \pm b_n) = a \pm b$.
+
+(ii) Die Folge $(a_n \cdot b_n)$ ist konvergent mit $\lim_{n \rightarrow \infty} (a_n \cdot b_n) = a \cdot b$.
+
+(iii) Ist $c \in \mathbb C$, so ist die Folge $(c \cdot a_n)$ konvergent mit $\lim_{n \rightarrow \infty} (c \cdot a_n ) = a \cdot b$.
+
+(iv) Ist $b \neq 0$, so gibt es ein $n_0 \in \mathbb N$, so dass $b_n \neq 0$ für alle $n \geq n_0$. Dann sind auch die Folgen $(\frac{1}{b_n})$ und $(\frac{a_n}{b_n})$ konvergent mit $\lim_{n\rightarrow \infty } (\frac{1}{b_n}) = \frac{1}{b}$ und $\lim_{n\rightarrow \infty } (\frac{a_n}{b_n}) = \frac{a}{b}$.
+
+(v) Die Folge $(\vert a_n \vert )_{n \in \mathbb N}$ ist konvergent mit $\lim_{n \rightarrow \infty } \vert a_n \vert = \vert a \vert$.
+
+(vi) Die komplexe Folge $(a_n)_{n \in \mathbb N}$ ist genau dann konvergent, wenn die beiden reellen Zahlenfolgen $(\operatorname{Re} (a_n))_{n \in \mathbb N}$ und $(\operatorname{Im} (a_n))_{n \in \mathbb N}$ konvergieren. In diesem Fall gilt $\lim_{n \rightarrow \infty} a_n = \lim_{n \rightarrow \infty} \operatorname{Re} (a_n) + i \cdot \lim_{n \rightarrow \infty} \operatorname{Im} (a_n)$.
+
+\textbf{Wichtige Folgen.}
+
+$\lim_{n \rightarrow \infty} \frac{1}{n} = 0$
+
+$\lim_{n \rightarrow \infty} \frac{n}{1} = \infty$
+
+$\lim_{n \rightarrow \infty} \sqrt[n]{n} = 1$
+
+$\lim_{n \rightarrow \infty} \frac{n}{n+1} = 1$
+
+\textbf{Reihen.}
+
+\textbf{Satz 4.1.27 (Majoranten- und Minorantenkriterium).} Es seinen $(a_n)_{n \in \mathbb N}$ und $(b_n)_{n \in \mathbb N}$ Folgen komplexer Zahlen.
+
+(i) Ist $\sum_{k=1}^\infty b_k$ absolut konvergent und gibt es eine reelle Zahl $c > 0$ mit $\vert a_n\vert \leq c \cdot \vert b_n \vert$ für alle $n \in \mathbb N$, dann ist auch $\sum_{k=1}^\infty a_k$ absolut konvergent.
+
+(ii) Ist $\sum_{k=1}^\infty b_k$ nicht absolut konvergent und gibt es eine reelle Zahl $c > 0$ mit $\vert a_n\vert \geq c \cdot \vert b_n \vert$ für alle $n \in \mathbb N$, dann ist auch $\sum_{k=1}^\infty a_k$ nicht absolut konvergent.
+
+\textbf{Satz 4.1.28 (Quotientenkriterium).} Es sei $(a_n)_{n\in \mathbb N}$ eine Folge komplexer Zahlen. Gibt es ein $n_0$, so dass für alle $n>n_0$ gilt:
+
+$\left|\frac{a_{n+1}}{a_n}\right| \le q<1$, dann ist $\sum_{k=1}^\infty a_k$ absolut konvergen
+
+$\left|\frac{a_{n+1}}{a_n}\right| = 1$, dann ist keine Aussage möglich
+
+$\left|\frac{a_{n+1}}{a_n}\right| \ge q > 1$, dann ist $\sum_{k=1}^\infty a_k$ divergent
+
+\textbf{Satz 4.1.29 (Wurzelkriterium).} Es sei $(a_n)_{n\in \mathbb N}$ eine Folge komplexer Zahlen. Gibt es ein $n_0$, so dass für alle $n>n_0$ gilt:
+
+$\sqrt[n]{\vert a_n \vert} \le q<1$, dann ist $\sum_{k=1}^\infty a_k$ absolut konvergen
+
+$\sqrt[n]{\vert a_n \vert} = 1$, dann ist keine Aussage möglich
+
+$\sqrt[n]{\vert a_n \vert} \ge q > 1$, dann ist $\sum_{k=1}^\infty a_k$ divergent
+
+\textbf{Satz 4.1.31 (Leibnitz-Kriterium).} Es sei $\sum_{k=1}^\infty a_k$ eine alternierende Reihe. Ist die Folge $(\vert a_n \vert )_{n \in \mathbb N}$ eine monoton fallende Nullfolge, dann konvergiert die Reihe $\sum_{k=1}^\infty a_k$.
+
+\textbf{Wichtige Reihen.}
+
+Geometrische Reihe: $\sum_{k=0}^\infty q^k = \frac{1}{1-q}$ für $\vert q \vert < 1$
+
+Harmonische Reihe: $\sum_{k=0}^\infty \frac{1}{k} = \infty$
+
+$\sum_{k=0}^\infty \frac{1}{k^2} = \frac{\pi^2}{6}$
+
+$\sum_{k=0}^\infty \frac{k!}{k^k} =$ FIXME
+
+\textbf{Potenzreihen.}
+
+\textbf{Def. 4.1.35 (Potenzreihen).} Es sei $(a_n)_{n \in \mathbb N_0}$ eine Folge komplexer Zahlen. Dann ist für belibige $z \in \mathbb C$ $\sum_{k=0}^\infty a_k z^k$ eine Potenzreihe.
+
+\textbf{Def. 4.1.37 (Konvergenzbereich, Konvergenzradius).} Es sei $(a_n)_{n\in \mathbb N_0}$ eine Folge komplexer Zahlen und $\sum_{k=0}^\infty a_k z^k$ die zugehörige Potenzreihe. Dann nennt man die Menge $C := \{ z \in \mathbb C \vert \sum_{k=0}^\infty a_k z^k \text{konvergiert}\}$ den Konvegenzbereich der Potenzreihe.
+
+Außerdem nennt man $\rho := \sup \{ \vert z\vert \vert z \in K\}$ den Konvergenzradius der Potenzreihe.
+
+\textbf{Satz 4.1.38 (Konvergenz von Potenzreihen).} FIXME
+
+\textbf{Satz 4.1.39} Es sei $(a_n)_{n \in \mathbb N_0}$ eine Folge komplexer Zahlen und $\sum_{k=0}^\infty a_k z^k$ die zugehörige Potenzreihe mit Konvergenzradius $\rho$. Für $n \in \mathbb N_0$ sei $b_n := \sqrt[n]{\vert a_n \vert}$. Dann gilt:
+
+(i) Geht die Folge $(b_n)_{n \in \mathbb N_0}$ gegen unendlich, so ist $\rho = 0$.
+
+(ii) Konvergiert $(b_n)_{n \in \mathbb N_0}$ gegen den Grenzwert $b > 0$, so ist $\rho = \frac{1}{b}$.
+
+(iii) Ist $(b_n)_{n \in \mathbb N_0}$ eine Nullfolge, so ist $\rho = \infty$.
+
+\textbf{Satz 4.1.40} Es sei $(a_n)_{n \in \mathbb N_0}$ eine Folge komplexer Zahlen mit $a_n \neq 0$ für alle $n \in \mathbb N_0$ und $\sum_{k=0}^\infty a_k z^k$ die zugehörige Potenzreihe mit Konvergenzradius $\rho$. Für $n \in \mathbb N_0$ sei $b_n := \frac{\vert a_{n+1} \vert }{\vert a_n \vert}$. Dann gilt:
+
+(i) Geht die Folge $(b_n)_{n \in \mathbb N_0}$ gegen unendlich, so ist $\rho = 0$.
+
+(ii) Konvergiert $(b_n)_{n \in \mathbb N_0}$ gegen den Grenzwert $b > 0$, so ist $\rho = \frac{1}{b}$.
+
+(iii) Ist $(b_n)_{n \in \mathbb N_0}$ eine Nullfolge, so ist $\rho = \infty$.
+
+\textbf{Wichtige Potenzreihen.}
+
+\textbf{Exponential- und Fogarithmus-Funktion.}
+
+\textbf{Satz 4.1.43 (Euler’sche Zahl e).} Die Folge $(a_n)_{n \in \mathbb N}$ mit $a_n := (1+\frac{1}{n})^n$ konvergiert. Der Grenzwert wird mit e bezeichnet und Euler’sche Zahl genannt.
+
+\textbf{Lemma 4.1.44} Die Reihe $\sum_{k=0}^\infty \frac{1}{k!}$ konvergiert gegen den Grenzwert e.
+
+\textbf{Def. 4.1.45 (Exponentialfunktion).} Die Exponentialfunktion $\exp : \mathbb C \rightarrow \mathbb C$ ist definiert durch $\exp (z) :=  \sum_{k=0}^\infty \frac{z^k}{k!}$ für alle $z \in \mathbb C$.
+
+\textbf{Bemerkung.} $e^z = \exp (z)$ für alle $z \in \mathbb C$
+
+\textbf{Def. 4.1.50 (Natürlicher Logarithmus).} FIXME
+
+\textbf{Def. 4.1.52 (Exponetialfunktion zur Basis a).} FIXME
+
+\textbf{Lemma 4.1.55.} FIXME
+
