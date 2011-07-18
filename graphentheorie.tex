@@ -1,23 +1,28 @@
-\textbf{Def 5.3.1 (Endlicher Graph).} FIXME 
+\textbf{Def 5.3.1 (Endlicher Graph).} Es sei $V$ eine endliche Menge und $E \subseteq \{\{u,v\} \vert u,v \in V \text{ und } u \neq v \}$. Dann heißt das Tupel $G= (V,E)$ ein (endlicher) Graph mit Knotenmenge $V$ und Kantenmenge $E$. Ist $e= \{u,v\} \in E$, so sagt man, dass die Kante $e$ die beiden Knoten $u$ und $v$ verbindet; $u$ und $v$ heißen auch Endknoten von $e$. Die Knoten $u$ und $v$ heißen in diesem Fall adjazent und man sagt, dass die Kante $e= \{u,v\}$ inzident zu $u$ und $v$ ist.
 
-\textbf{Def. 5.3.2 (Vollständiger Graph).} FIXME
+\textbf{Def. 5.3.2 (Vollständiger Graph).} Ein Graph $G=(V,E)$ heißt vollständig, falls jedes Knotenpaar durch eine Kante verbunden wird, das heiqt, falls für die Anzahl der Kanten $\vert E \vert = \binom{\vert V \vert}{2}$ gilt. Den vollständigen Graphen auf $n$ Knoten bezeinet man mit $K_n$.
 
-\textbf{Def. 5.3.3 (Knotengrad).} FIXME
+\textbf{Def. 5.3.3 (Knotengrad).} Es sei $G= (V,E)$ ein Graph. Der Grad $d(u)$ eines Knotens $u\in V$ ist die Anzahl der zu diesem Knoten inzidenten Kanten, also $d(u) := \vert \{ e \in  E \vert u \in e \} \vert$.
 
-\textbf{Def. 5.3.5 (Kantenfogle, Wege, Kreise).} FIXME
+\textbf{Def. 5.3.5 (Kantenfogle, Wege, Kreise).} Es sei $ G= (V,ER$ einn Graph und $v_0, ... , v_n \in V$ mit $e_i := \{ v_{i-1}, v_i\} \in E$ für $i=1,...,n$.
 
-\textbf{Def. 5.3.8 (Teilgraph).} FIXME
+(i) Dann heißt $e_1, ...,e_n$ eine Kantenfolge von $v_0$ zu $v_n$. Ist $v_0 = v_n$, so heißt die Kantenfolge geschlossen.
 
-\textbf{Def. 5.3.9 (Zusammenhängender Graph).} FIXME
+(ii) Sind die Knoten $v_0,...,v_n$ paarweise verschieden,, so nennt man die Kantenfolge $e_1,...,e_n$ auch Weg oder Pfad (von $v_0$ nach $v_n$).
 
-\textbf{Def. 5.3.10 (Zusammenhangskomponenten).} FIXME
+(iii) Ist die Kantenfolge $e_1, ...,e_n$ geschlossen und sind die Knoten $v_1,...,v_n$ paarweise verschieden, so handelt es sich um einen Kreis.
 
-\textbf{Def. 5.3.11 (Euler\textquoteright{}scher Graph, Euler-Tour).} FIXME
+\textbf{Def. 5.3.8 (Teilgraph).} Es sei $G = (V,E)$ ein Graph. Der Graph $G' = (V',E')$ heißt Teilgraph von $G$, falls $V' \subseteq V$ und $E' \subseteq E$ gilt. Der Teilgraph $G'$ heißt aufspannend, falls $V' = V$ gilt.
 
-\textbf{Satz 5.3.12 (Satz von Euler).} FIXME
+\textbf{Def. 5.3.9 (Zusammenhängender Graph).} En Graph $G= (V,E)$ heißt zusammenhängend, falls es zu jedem Knotenpaar $u,v\in V$ einen Weg von $u$ nach $v$ gibt.
+
+\textbf{Def. 5.3.10 (Zusammenhangskomponenten).} es sei $G = (V,E)$ ein Graph. Dann gibt es eine Partioion der Knotenmenge $V$ in Teilmengen $V_1,...,V_k$ und eine Partiotion der Kantenmenge $E$ ind Teilmengen $E_1,...,E_k$, so dass $G_i = (V_i,E_i)$ ein zusammenhängender Teilgraph von $G$ ist, für $i = 1,...,k$. Die Teilgraphen $G_1,...,G_k$ sind bis auf ihre Reihenfolge eindeutig und heißen Zusammenhangskomponenten von $G$. Ist $G$ zusammenhängend, so ist $k=1$.
+
+\textbf{Def. 5.3.11 (Euler\textquoteright{}scher Graph, Euler-Tour).} Ein zusammenhängender Graph $G=(V,E)$ heißt Euler‘sch, fals es eine geschlossene Kantenfolge gibt, die jede Kante aus $E$ genau einmal enthält. Eine solche geschlossene Kantenfolge heißt Euler-Tour.
+
+\textbf{Satz 5.3.12 (Satz von Euler).} Ein zasammenhängender Graph $G=(V,E)$ ist genau dann Euler’sch, wenn der Grad jedes Knotens aus $V$ gerade ist.
 
 \textbf{Satz 5.3.17} Ein Baum $G=(V,E)$ besitzt genau eine Kante
-weniger als Knoten, das heißt $\vert E\vert=\vert V\vert-1$
+weniger als Knoten, das heißt $\vert E\vert=\vert V\vert-1$.
 
-\textbf{Def. 5.3.19 (Zyklomatische Zahl).} FIXME
-
+\textbf{Def. 5.3.19 (Zyklomatische Zahl).} Es sei $G= (V,E)$ ein Graph. Dann heißt $\nu (G):=\vert E \vert - \vert V \vert +1$ der zyklomatische Zahl von $G$.
