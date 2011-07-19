@@ -2,13 +2,15 @@
 
 \textbf{Def. 4.2.1 (Berührungspunket).} Es sei $D \subseteq \mathbb K$. Ein Element $x_0 \in \mathbb K$ heißt Berührungspunkt von D, wenn es eine Folge $(x_n)_{n \in \mathbb N}$ mit $x_n \in D$ für alle $n \in \mathbb N$ gibt, so dass $\lim_{n \rightarrow \infty} x_n = x_0$
 
-\textbf{Grenzwert.} FIXME
+\textbf{Stetigkeit.} 
 
-\textbf{Stetigkeit.} FIXME
+\textbf{Def. 4.2.8 (Stetigkeit).} Es sei $D \subseteq \mathbb K$ und $f:D\rightarrow \mathbb K$ eine Funktion.
 
-\textbf{Def. 4.2.8 (Stetigkeit).} FIXME
+(i) Die Funktion $f$ heißt stetig in $x_0 \in D$, falls ihr Grenzwert in $x_0$ existiert (also $\lim_{x\rightarrow x_0} f(x) = f(x_0)$).
 
-\textbf{Korollar 4.2.9.} FIXME
+(iii) Die Funktion $f$ heißt stetig, falls sie in allen Punkten $x_0\in D$ stetig ist.
+
+(iv) Ist $x_0 \in \mathbb K \backslash D$ ein Berührungspunkt von $D$ und existiert der Grenzwert von $f$ in $x_0$, so heißt $f$ stetig ergänzbar in $x_0$. Die Funktion $\overline f:D \cup \{x_0\} \rightarrow \mathbb K$ mit $\overline f(x)=f(x)$ (falls $x\in D$) und $\overline f(x)=\lim_{x'\rightarrow x_0}f(x')$ (falls $x=x_0$) heißt stetige Ergänzung von $f$ in $x_0$.
 
 \textbf{Satz 4.2.16.} Die Exponentialfunktion $\exp :\mathbb C \rightarrow \mathbb C$ ist stetig.
 
@@ -16,15 +18,35 @@
 
 \textbf{Korollar 4.2.18.} Der natürliche Logartihmus $\ln : \mathbb R_{>0} \rightarrow \mathbb R$ ist stetig.
 
-\textbf{Lemma 4.2.19.} FIXME
+\textbf{Lemma 4.2.19.} Es sei $p:\mathbb R \rightarrow \mathbb R$ eine belibige Polynomfunktion. Dann gilt $\lim_{x\rightarrow \infty} \frac{p(x)}{\exp(x)}=0$. Für beliebiges $n\in \mathbb N$ gilt $\lim_{x\rightarrow \infty} \frac{\ln(x)}{\sqrt[n]{x}} = 0$.
 
-\textbf{Lemma 4.2.20.} FIXME
+\textbf{Lemma 4.2.20.} Die Exponetialfunktion $\exp : \mathbb C \rightarrow \mathbb C$ besitzt die folgenden Eigenschaften:
 
-\textbf{Lemma 4.2.21.} FIXME
+(i) $\exp(\overline z) = \overline{\exp(z)}$ für alle $z \in \mathbb C$.
 
-\textbf{Def. 4.2.22 (Sinus und Cosinus).} FIXME
+(ii) $\vert \exp(x+iy) \vert = \exp (x)$ für alle $x,y \in \mathbb R$. Insbesontere ist $\vert\exp(iy)\vert =1$ für alle $y \in \mathbb R$.
 
-\textbf{Satz 4.2.23 (Eigenschaften von cos und sin).} FIXME
+\textbf{Lemma 4.2.21.} Die Funktion $f:\mathbb R \rightarrow \mathbb C$ mit $f(\phi) := \exp (i\phi)$ ist $2\pi$-periodisch, das heißt $\exp (i(\phi +2\pi)) = \exp(i\phi)$ für alle $\phi \in \mathbb R$.
+
+\textbf{Def. 4.2.22 (Sinus und Cosinus).} Für $\phi \in \mathbb R$ definieren wir $\cos(\phi) := \text{Re}(\exp(i\phi))$ und $\sin(\phi) := \text{Im}(\exp(i\phi))$.
+
+\textbf{Satz 4.2.23 (Eigenschaften von cos und sin).} (i) Cosinus und Sinus sind $2\pi$-periodisch und es gilt für alle $k \in \mathbb Z$:
+
+$\cos (2k\pi) = \sin (2k\pi + \pi / 2)= 1$,
+
+$\cos (k\pi+ \pi /2) = \sin(k\pi) = 0$,
+
+$\cos ((2k+1)\pi) = \sin (2k\pi+3\pi/2) = -1$.
+
+Außerdem ist $\cos (\phi) = \sin(\phi + \pi /2)$ für alle $\phi \in \mathbb R$.
+
+(ii) Cosinus und Sinus sind  stetige Funktionen.
+
+(iii) $(\cos(x))^2 + (\sin (x))^2 = 1$ für alle $x,y \in \mathbb R$.
+
+(iv) $\cos (x+y) = \cos (x) \cos (y) - \sin (x) \sin (y)$ für alle $x,y \in \mathbb R$.
+
+(v) $\sin (x+y) = \sin (x) \cos(y) + \cos (x) \sin (y)$ für alle $x,y \in \mathbb R$.
 
 \textbf{Satz 4.2.24 (Reihenentwicklung von cos und sin).} Die Funktionen $\cos$ und $\sin$ lassen sich wie folgt als Potenzreihen darstellen. Es gilt $\cos (x) = \sum_{k=0}^\infty \frac{(-1)^k}{(2k)!}x^{2k}$ und $\sin (x) = \sum_{k=0}^\infty \frac{(-1)^k}{(2k+1)!}x^{2k+1}$.
 
