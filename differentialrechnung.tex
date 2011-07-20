@@ -1,14 +1,18 @@
 \textbf{Differentialrechnung.}
 
-\textbf{Def. 4.3.1 (Sekante, Steigung).} FIXME
+\textbf{Def. 4.3.1 (Sekante, Steigung).} Es sei $D \subseteq \mathbb R$ und $f : D \rightarrow \mathbb R$ eine reelle Funktion. Sind $x_0$, $x \in D$ mit $x_0 \neq x$, dann heißt die eindeutige Gerade durch die Punkte $(x_0,f(x_0))$ und $(x,f(x))$ Sekante des Graphen der Fnuktion $f$. Die Steigung der Sekante ist durch den Ausdruck $\frac{f(x)-f(x_0)}{x-x_0}$ gegeben. Dieser Ausdruck wird auch Differenzenquotient genannt.
 
-\textbf{Def. 4.3.2 (Differenzierbarkeit, Ableitung).} FIXME
+\textbf{Def. 4.3.2 (Differenzierbarkeit, Ableitung).} Es sei $D \subseteq \mathbb R$ und $f: D \rightarrow \mathbb R$ eine reelle Funktion.
+
+(i) Ist $x_0 \in D$ und existiert der Grenzwert $\lim_{x \rightarrow x_0} \frac{f(x)-f(x_0)}{x-x_0}$, so sagt man, dass $f$ in $x_0$ differenzierbar ist.
+
+(ii) Eine Funktion, die in jedem Punkt differenzierbar ist, nennt man Differenzierbar.
 
 \textbf{Satz 4.3.4.} Es sei $D \subseteq \mathbb R$ und $f : D \rightarrow \mathbb K$ eine Funktion. Ist $x_0 \in D$ und ist $f$ in $x_0$ differenzierbar, so ist $f$ in $x_0$ auch stetig.
 
 \textbf{Satz 4.3.5.} Die reelle Exponentialfunktion $\exp : \mathbb R \rightarrow \mathbb R$ ist differenzierbar und es gilt $\exp' = \exp$.
 
-\textbf{Korollar 4.3.6.} FIXME
+\textbf{Korollar 4.3.6.} Für $c \in \mathbb C$ ist die Funktion $f:\mathbb R \rightarrow \mathbb C$ mit $f(x) := \exp(c\cdot x)$ differenzierbar mit Ableitung $f'(x) = c \cdot f(x) = c \cdot \exp (c \cdot x)$.
 
 \textbf{Satz 4.3.8.} Es sei $D\subseteq \mathbb R$, $x_0 \in \mathbb D$ und $f,g : D \rightarrow \mathbb K$ zwei Funktionen, die un $x_0$ differenzierbar sind. Weiter seien $\lambda , \mu \in \mathbb K$. Dann gilt:
 
@@ -16,11 +20,13 @@
 
 (ii) Die Funktionen $f\cdot g : D \rightarrow \mathbb K$ ist in $x_0$ differenzierbar mit $(f \cdot g)'(x_0) = f'(x_0)\cdot g(x_0) + f(x_0) \cdot g'(x_0)$ („Leibniz’sche Produktregel“).
 
-FIXME
+(iii) Ist $g(x_0) \neq 0$, so ist die Funktion $f/g$ in $x_0$ defferenzierbar mit $\left(\frac{f}{g}\right)'(x_0) = \frac{f'(x_0)\cdot g(x_0) - f(x_0) \cdot g'(x_0)}{g(x_0)^2}$ („Quotientenregel“).
 
-\textbf{Satz 4.3.9 (Ableitung der Umkehrfunktion).} FIXME
+(iv) Ist $D' \subseteq \mathbb R$, $y_0 \in D'$ und $h:D' \rightarrow D$ eine Funktion mit $h(y_0) = x_0$, die in $y_0$ differenzierbar ist. Dann ist die Funktion $f \circ h : D' \rightarrow \mathbb K$ in $y_0$ differenzierbar mit $(f \circ h)'(y_0) = f'(h(y_0)) \cdot h'(y_0)$ („Kettenregel“).
 
-\textbf{Satz 4.3.13 (Mittelwertsatz der Differentialrechnung).} FIXME
+\textbf{Satz 4.3.9 (Ableitung der Umkehrfunktion).} FIXME $(f^{-1})' (f(x_0)) = \frac{1}{f'(x_0)}$
+
+\textbf{Satz 4.3.13 (Mittelwertsatz der Differentialrechnung).} FIXME 
 
 \textbf{Korollar 4.3.14 (Satz von Rolle).} FIXME
 
@@ -74,4 +80,6 @@ die Taylor-Reihe von $f$ mit Entwicklungspunkt $x_{0}$.
 \textbf{Def. 4.4.33 (Determinate).} FIXME
 
 \textbf{Satz 4.3.34} FIXME
+
+\textbf{Ableitungen} FIXME
 
